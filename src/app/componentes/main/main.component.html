@@ -5,12 +5,20 @@
   <h1> >As notas adicionadas são exibidas aqui</h1>
 </div>
 
-<!--
+
   
--->
-<div *ngFor="let nota of listaNotas">
-  <app-notas [nota]="nota"></app-notas>
-</div>
+ <div *ngIf="listaNotas.length > 0">
+        <div *ngFor="let nota of listaNotas">
+            <app-nota [nota]="nota"></app-nota>
+        </div>
+    </div>
+
+    <ng-template>
+      <div>
+          <p>Não há notas =(</p>
+      </div>
+  </ng-template>
+  
 
 <!--
 <section class="icones-parte-inferior">
