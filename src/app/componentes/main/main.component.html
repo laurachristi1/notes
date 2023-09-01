@@ -1,0 +1,25 @@
+
+<div class="adicionar">
+  <button class="adicionar" [routerLink]="['/criar-nota']" >Criar nota</button>
+  <div class="exibicao">
+  <h1> >As notas adicionadas são exibidas aqui</h1>
+</div>
+
+<!--
+  
+-->
+<div *ngFor="let nota of listaNotas">
+  <app-notas [nota]="nota"></app-notas>
+</div>
+
+<!--
+<section class="icones-parte-inferior">
+  <div>
+    <i class="fa-solid fa-trash"></i>
+    <i class="fa-solid fa-clock-rotate-left"></i>
+    <i class="fa-solid fa-table-cells-large"></i>
+  </div>
+</section>
+-->
+
+

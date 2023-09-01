@@ -1,0 +1,59 @@
+
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.75rem;
+  margin-bottom: 2rem;
+  border-color: black,;
+}
+
+.icones-nav{
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 3px solid black;
+  width: 500px;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+
+.esquerda {
+  padding-left: 24px;
+}
+
+.icone{
+  padding-left: 35px;
+  font-size: 24px;
+}
+
+.icone-config{
+  font-size: 24px;
+  padding-right: 35px;
+}
+
+.pesquisar{
+  font-size: 24px;
+  font-family: 'Alegreya Sans';
+}
+
+.icons-parte-esquerda{
+  font-size: 25px;
+  width: 42px;
+  height: 252px;
+  border: 3px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+
+}
+
+.icones{
+  padding-top: 18px;
+  display: block;
+  flex-direction: column;
+}
