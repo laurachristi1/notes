@@ -6,9 +6,16 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-  @Input() nota = {
-    titulo: "TESTE2",
-    conteudo: "BBBBBB",
-    tipo: "tipo1"
-  }
+  listaNotas= [
+    {
+      titulo: "BBBBB",
+      conteudo: "DEU CERTO!",
+      tipo: "tipo2"
+    },
+    {
+      titulo: "CCCCC",
+      conteudo: "DEU ERRADO!",
+      tipo: "tipo3"
+    }
+  ];
 }

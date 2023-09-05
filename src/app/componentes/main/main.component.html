@@ -1,33 +1,24 @@
-
-<div class="adicionar">
-  <button class="adicionar" [routerLink]="['/criar-nota']" >Criar nota</button>
-  <div class="exibicao">
-  <h1> >As notas adicionadas são exibidas aqui</h1>
+<div class="container">
+  <div class="adicionar">
+    <button class="adicionar_button" [routerLink]="['/criar-nota']" >Criar nota</button> <!--routerLink- serve para definir uma rota para criação de nota-->
+ </div>
+ 
+   <div class="exibicao">
+     <h1> As notas adicionadas são exibidas aqui</h1>
+   </div>
 </div>
 
 
+
   
- <div *ngIf="listaNotas.length > 0">
+ <div *ngIf="listaNotas.length > 0, else semNotas">
         <div *ngFor="let nota of listaNotas">
-            <app-nota [nota]="nota"></app-nota>
+          <app-notas [nota]="nota"></app-notas>
         </div>
     </div>
 
-    <ng-template>
+    <ng-template #semNotas>
       <div>
-          <p>Não há notas =(</p>
+          <p>Não há notas =</p>
       </div>
   </ng-template>
-  
-
-<!--
-<section class="icones-parte-inferior">
-  <div>
-    <i class="fa-solid fa-trash"></i>
-    <i class="fa-solid fa-clock-rotate-left"></i>
-    <i class="fa-solid fa-table-cells-large"></i>
-  </div>
-</section>
--->
-
-

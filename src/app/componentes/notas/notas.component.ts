@@ -1,4 +1,4 @@
-import { Component
+import { Component, Input
  } from '@angular/core';
 
 @Component({
@@ -7,9 +7,9 @@ import { Component
   styleUrls: ['./notas.component.css']
 })
 export class NotasComponent {
-  nota = {
-    titulo: "TESTE",
-    conteudo: "TESTEEE",
+  @Input() nota = {
+    titulo: "AAAAAA",
+    conteudo: "TESTE",
     tipo: "tipo1"
   }
 }
