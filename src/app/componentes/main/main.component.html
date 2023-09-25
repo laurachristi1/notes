@@ -9,8 +9,6 @@
 </div>
 
 
-
-  
  <div *ngIf="listaNotas.length > 0, else semNotas">
         <div *ngFor="let nota of listaNotas">
           <app-notas [nota]="nota"></app-notas>
