@@ -8,6 +8,8 @@ import { MainComponent } from './componentes/main/main.component';
 import { CriarNotaComponent } from './componentes/criar-nota/criar-nota.component';
 import { NotasComponent } from './componentes/notas/notas.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ExcluirNotaComponent } from './componentes/excluir-nota/excluir-nota.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { HttpClientModule } from '@angular/common/http';
     CabecalhoComponent,
     MainComponent,
     CriarNotaComponent,
-    NotasComponent
+    NotasComponent,
+    ExcluirNotaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

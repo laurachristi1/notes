@@ -14,6 +14,23 @@ export class NotaService { //usado para usar em todo o projeto angular
     return this.http.get<Nota[]>(this.API)
   }
   
+  criar(nota: Nota): Observable<Nota>{
+    return this.http.post<Nota>(this.API, nota)
+  }
+
+
+   //preenche uma nota baseado no ID 
+  buscarPorId(id: number): Observable<Nota> {
+    const url = `${this.API}/${id}`
+    return this.http.get<Nota>(url)
+  }
+
+  //
+  excluir(id: number): Observable<Nota> {
+    const url = `${this.API}/${id}`
+    return this.http.delete<Nota>(url)
+  }
+
 }
 
 
